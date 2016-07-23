@@ -1,0 +1,170 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of xxx Company. \
+         Here you will learn all about the latency of our network.
+
++ TEST
+menu= TEST_smokeping
+title = TEST Network Latency Grapher
+menuextra = <a target='_blank' href=\'#\'" class='{CLASS}'onclick="window.open(this.href,this.target, '>,toolbar=no,location=no,status=no,scrollbars=no'); return false;">*traceroute*</a>
+
+
+
++ Local
+
+menu = Local
+title = Local Network
+#parents = owner:/Test/James location:/
+
+++ LocalMachine
+
+menu = Local Machine
+title = This host
+host = localhost
+#alerts = someloss
+
+
++ Other
+menu = 其他网络监控
+title = 其他所有网络监控列表
+++ dianxin
+menu = 电信网络监控
+title = 电信网络监控列表
+host = /Other/dianxin/dianxin-hlj /Other/dianxin/dianxin-gd /Other/dianxin/dianxin-gs /Other/dianxin/dianxin-sh
++++ dianxin-hlj
+menu = 黑龙江电信
+title = 黑龙江电信
+alerts = someloss
+#slaves = boomer slave2
+host = 219.150.32.132
++++ dianxin-gd
+menu = 广东电信
+title = 广东电信
+alerts = someloss
+#slaves = boomer slave2
+host = 113.111.211.22
++++ dianxin-gs
+menu = 甘肃电信
+title = 甘肃电信
+alerts = someloss
+#slaves = boomer slave2
+host = 202.100.64.68
++++ dianxin-sh
+menu = 上海电信
+title = 上海电信
+alerts = someloss
+#slaves = boomer slave2
+host = 202.96.209.5
+#+++ dianxin-multi
+#menu = 多个电信网络监控列表
+#title = 多个电信网络监控列表
+#alerts = someloss
+#slaves = boomer slave2
+#host = /Other/dianxin/dianxin-hlj /Other/dianxin/dianxin-gd /Other/dianxin/dianxin-gs /Other/dianxin/dianxin-sh
+#
+++ liantong
+menu = 联通网络监控
+title = 联通网络监控列表
+host = /Other/liantong/liantong-hlj /Other/liantong/liantong-gd /Other/liantong/liantong-gs /Other/liantong/liantong-sh
++++ liantong-hlj
+menu = 黑龙江联通
+title = 黑龙江联通
+alerts = someloss
+#slaves = boomer slave2
+host = 202.97.224.68
++++ liantong-gd
+menu = 广东联通
+title = 广东联通
+alerts = someloss
+#slaves = boomer slave2
+host = 221.4.66.66
++++ liantong-gs
+menu = 甘肃联通
+title = 甘肃联通
+alerts = someloss
+#slaves = boomer slave2
+host = 221.7.34.10
++++ liantong-sh
+menu = 上海联通
+title = 上海联通
+alerts = someloss
+#slaves = boomer slave2
+host = 210.22.70.3
+#+++ liantong-multi
+#menu = 多个联通网络监控列表
+#title = 多个联通网络监控列表
+#alerts = someloss
+#slaves = boomer slave2
+#host = /Other/liantong/liantong-hlj /Other/liantong/liantong-gd /Other/liantong/liantong-gs /Other/liantong/liantong-sh
+++ yidong
+menu = 移动网络监控
+title = 移动网络监控列表
+host = /Other/yidong/yidong-hlj /Other/yidong/yidong-gd /Other/yidong/yidong-gs /Other/yidong/yidong-sh
++++ yidong-hlj
+menu = 黑龙江移动
+title = 黑龙江移动
+alerts = someloss
+#slaves = boomer slave2
+host = 211.137.241.34
++++ yidong-gd
+menu = 广东移动
+title = 广东移动
+alerts = someloss
+#slaves = boomer slave2
+host = 211.137.241.34
++++ yidong-gs
+menu = 甘肃移动
+title = 甘肃移动
+alerts = someloss
+#slaves = boomer slave2
+host = 218.203.160.194
++++ yidong-sh
+menu = 上海移动
+title = 上海移动
+alerts = someloss
+#slaves = boomer slave2
+host = 117.131.0.22
+#+++ yidong-multi
+#menu = 多个移动网络监控列表
+#title = 多个移动网络监控列表
+#alerts = someloss
+#slaves = boomer slave2
+#host = /Other/yidong/yidong-hlj /Other/yidong/yidong-gd /Other/yidong/yidong-gs /Other/yidong/yidong-sh
+++ jiaoyu
+menu = 教育网络监控
+title = 教育网络监控列表
+host = /Other/jiaoyu/jiaoyu-qh /Other/jiaoyu/jiaoyu-sh /Other/jiaoyu/jiaoyu-wh /Other/jiaoyu/jiaoyu-hn
++++ jiaoyu-qh
+menu = 清华大学
+title = 清华大学
+alerts = someloss
+#slaves = boomer slave2
+host = 166.111.8.28
++++ jiaoyu-sh
+menu = 上海交大
+title = 上海交大
+alerts = someloss
+#slaves = boomer slave2
+host = 202.112.26.34
++++ jiaoyu-wh
+menu = 武汉科技大学
+title = 武汉科技大学
+alerts = someloss
+#slaves = boomer slave2
+host = 202.114.240.6
++++ jiaoyu-hn
+menu = 华南农业大学
+title = 华南农业大学
+alerts = someloss
+#slaves = boomer slave2
+host = 202.116.160.33
+#+++ jiaoyu-multi
+#menu = 多个教育网络监控列表
+#title = 多个教育网络监控列表
+#alerts = someloss
+#slaves = boomer slave2
+#host = /Other/jiaoyu/jiaoyu-qh /Other/jiaoyu/jiaoyu-sh /Other/jiaoyu/jiaoyu-wh /Other/jiaoyu/jiaoyu-hn
